@@ -1,0 +1,33 @@
+# IDE-specific files (IntelliJ IDEA)
+.idea/
+*.iml
+*.iws
+out/
+
+# Maven build artifacts
+target/
+*.jar
+*.war
+*.ear
+*.class
+
+# Maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependency directories (if any)
+node_modules/
+bower_components/
+
+# Environment files
+.env
