@@ -12,6 +12,7 @@ public abstract class Animal {
     protected double energy;
     protected double hunger;
     protected boolean canAttack;
+    protected int age = 0;
 
     public Animal(AnimalState state, AnimalType type, double health, double energy, double hunger, boolean canAttack) {
 
@@ -21,6 +22,14 @@ public abstract class Animal {
         this.energy = energy;
         this.hunger = hunger;
         this.canAttack = canAttack;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public AnimalState getState() {
@@ -43,24 +52,22 @@ public abstract class Animal {
         return canAttack;
     }
 
-    public AnimalState setState(AnimalState state) {
-        return this.state = state;
+    public void setState(AnimalState state) {
+        this.state = state;
     }
-    public AnimalType setType(AnimalType type) {
-        return this.type = type;
+    public void setType(AnimalType type) {
+        this.type = type;
     }
-    public double setHealth(double health) {
-        return this.health = health;
+    public void setHealth(double health) {
+        this.health = health;
     }
-    public double setEnergy(double energy) {
-        return this.energy = energy;
+    public void setEnergy(double energy) {
+        this.energy = energy;
     }
-    public double setHunger(double hunger) {
-        return this.hunger = hunger;
+    public void setHunger(double hunger) {
+        this.hunger = hunger;
     }
-    public boolean setCanAttack(boolean canAttack){
-        return this.canAttack = canAttack;
+    public void setCanAttack(boolean canAttack){
+        this.canAttack = canAttack;
     }
-
-
 }
