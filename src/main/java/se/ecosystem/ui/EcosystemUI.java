@@ -30,12 +30,12 @@ public class EcosystemUI extends Application {
     private static final int GRID_HEIGHT = 15;
     private static final int CELL_SIZE = 30;
 
-    // Simulation speed (milliseconds per tick)
-    private static final long TICK_DURATION_NS = 200_000_000; // 200ms
+
+    private static final long TICK_DURATION_NS = 200_000_000;
 
     private SimulationHandler simulationHandler;
 
-    // Smooth movement: Store previous grid coordinates for interpolation
+
     private final Map<Animal, SimulationHandler.Point> previousPositions = new HashMap<>();
 
     // Stats Labels
