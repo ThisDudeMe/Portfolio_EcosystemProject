@@ -41,17 +41,31 @@ public class SimulationHandler {
     }
 
     private void spawnAnimals() {
+        int cornerW = Math.max(1, width / 4);
+        int cornerH = Math.max(1, height / 4);
+
+        // Herbivores: Top-Left
+        for (int i = 0; i < 8; i++) {
+            spawnAnimalInBounds(new AnimalHerbivore(100, 100, 0), 0, cornerW, 0, cornerH);
+        }
+        // Carnivores: Top-Right
+        for (int i = 0; i < 2; i++) {
+            spawnAnimalInBounds(new AnimalCarnivore(120, 150, 0), width - cornerW, width, 0, cornerH);
+        }
+        // Omnivores: Bottom-Right
         for (int i = 0; i < 4; i++) {
-            spawnAnimal(new AnimalHerbivore(100, 100, 0));
-            spawnAnimal(new AnimalCarnivore(120, 150, 0));
-            spawnAnimal(new AnimalOmnivore(110, 120, 0));
+            spawnAnimalInBounds(new AnimalOmnivore(110, 120, 0), width - cornerW, width, height - cornerH, height);
         }
     }
 
     private void spawnAnimal(Animal animal) {
+        spawnAnimalInBounds(animal, 0, width, 0, height);
+    }
+
+    private void spawnAnimalInBounds(Animal animal, int minX, int maxX, int minY, int maxY) {
         animals.add(animal);
-        int x = random.nextInt(width);
-        int y = random.nextInt(height);
+        int x = random.nextInt(maxX - minX) + minX;
+        int y = random.nextInt(maxY - minY) + minY;
         animalPositions.put(animal, new Point(x, y));
     }
 

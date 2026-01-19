@@ -7,7 +7,6 @@
     <list default="true" id="2aa42dd6-75f2-45cc-97bc-cb0a450e9248" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/ecosystem/simulation/SimulationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/ecosystem/simulation/SimulationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/ecosystem/ui/EcosystemUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/ecosystem/ui/EcosystemUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +115,7 @@
       <workItem from="1767781960479" duration="121000" />
       <workItem from="1768470027395" duration="2388000" />
       <workItem from="1768824383167" duration="387000" />
+      <workItem from="1768832890555" duration="751000" />
     </task>
     <servers />
   </component>
